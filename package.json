@@ -1,17 +1,17 @@
 {
   "name": "votingdemoprj",
   "version": "0.0.1",
-  "description": "This is a simple picture voting game with node.js",
+  "description": "Simple picture voting game with node.js",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "game",
-    "picture",
-    "voting"
+    "voting",
+    "demo",
+    "prj"
   ],
-  "author": "Martin Angelov",
+  "author": "Win Htet Naing",
   "license": "MIT",
   "dependencies": {
     "express": "~3.4.7",
