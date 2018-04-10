@@ -11,7 +11,7 @@ var express = require('express');
 // Create a new express.js web app:
 
 var app = express();
-var port = process.env.port || 5000;
+const PORT = process.env.PORT || 5000;
 
 // Configure express with the settings found in
 // our config.js file
@@ -29,7 +29,6 @@ require('./routes')(app);
 
 //app.listen(8080);
 //app.address().port
-var listener = app.listen(port, function(){
-    console.log('Listening on port ' + listener.address().port); //Listening on port 8888
-});
-console.log('Your application is running on http://localhost');
+app.listen(PORT, () => console.log(`Listening on ${ PORT }`));
+
+//console.log('Your application is running on http://localhost');
