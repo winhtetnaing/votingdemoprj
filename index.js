@@ -28,7 +28,8 @@ require('./routes')(app);
 // `node index.js`. Start the server!
 
 //app.listen(8080);
+//app.address().port
 app.listen(port,function(){ 
     console.log("server start on port"+ port);
 })
-console.log('Your application is running on http://localhost:'+port);
+console.log('Your application is running on http://localhost');
