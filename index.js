@@ -11,7 +11,7 @@ var express = require('express');
 // Create a new express.js web app:
 
 var app = express();
-var port = process.env.port || 5000;
+var port = process.env.port;
 
 // Configure express with the settings found in
 // our config.js file
@@ -31,4 +31,4 @@ require('./routes')(app);
 app.listen(port,function(){ 
     console.log("server start on port"+ port);
 })
-console.log('Your application is running on http://localhost:5000');
+console.log('Your application is running on http://localhost:'+port);
